@@ -1,7 +1,8 @@
 export default function Ingredient({ name, amount }) {
   return (
     <li>
-      <strong>{amount}</strong> {name}
+      <input type='checkbox' /> <strong className='font-black'>{amount}</strong>{' '}
+      <span dangerouslySetInnerHTML={{ __html: name }} />
     </li>
   );
 }
