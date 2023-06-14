@@ -9,7 +9,7 @@ export default function App() {
   return (
     <>
       <Intro name={recipeData.name} summary={recipeData.blurb} />
-      <RecipeImage />
+      <RecipeImage imgURL={recipeData.mainImage} />
       <RecipeDetailList />
       <IngredientList />
       <InstructionsList />
