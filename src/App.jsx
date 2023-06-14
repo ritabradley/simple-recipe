@@ -11,7 +11,7 @@ export default function App() {
       <Intro name={recipeData.name} summary={recipeData.blurb} />
       <RecipeImage imgURL={recipeData.mainImage} />
       <RecipeDetailList recipeDetails={recipeData.cookingDetails} />
-      <IngredientList />
+      <IngredientList ingredientsList={recipeData.ingredientList} />
       <InstructionsList />
     </>
   );

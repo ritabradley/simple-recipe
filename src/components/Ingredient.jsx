@@ -1,3 +1,7 @@
-export default function Ingredient() {
-  return <p>Ingredient</p>;
+export default function Ingredient({ name, amount }) {
+  return (
+    <li>
+      <strong>{amount}</strong> {name}
+    </li>
+  );
 }
