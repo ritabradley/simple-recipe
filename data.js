@@ -55,7 +55,7 @@ export const recipeData = {
           amount: '3',
         },
         {
-          name: 'topping suggestions: <em>salted caramel, lemon curd, strawberry topping, chocolate ganache, red wine chocolate ganache, fresh fruit, whipped cream, or raspberry sauce</em>',
+          name: 'topping suggestions: <strong><em>salted caramel, lemon curd, strawberry topping, chocolate ganache, red wine chocolate ganache, fresh fruit, whipped cream, or raspberry sauce</em></strong>',
         },
       ],
     },
