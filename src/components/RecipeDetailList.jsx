@@ -1,10 +1,12 @@
 import RecipeDetail from './RecipeDetail';
 
-export default function RecipeDetailList() {
+export default function RecipeDetailList({ recipeDetails }) {
   return (
     <>
       <h3>Recipe Details</h3>
-      <RecipeDetail />
+      {Object.entries(recipeDetails).map(([key, value]) => (
+        <RecipeDetail title={key} value={value} key={key} />
+      ))}
     </>
   );
 }
