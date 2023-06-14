@@ -12,7 +12,7 @@ export default function App() {
       <RecipeImage imgURL={recipeData.mainImage} />
       <RecipeDetailList recipeDetails={recipeData.cookingDetails} />
       <IngredientList ingredientsList={recipeData.ingredientList} />
-      <InstructionsList />
+      <InstructionsList instructionsList={recipeData.instructions} />
     </>
   );
 }

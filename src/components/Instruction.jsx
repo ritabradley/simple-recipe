@@ -1,3 +1,8 @@
-export default function Instruction() {
-  return <p>Instruction</p>;
+export default function Instruction({ step, instruction }) {
+  return (
+    <li>
+      <span>{step}</span>
+      <p dangerouslySetInnerHTML={{ __html: instruction }} />
+    </li>
+  );
 }
