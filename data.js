@@ -2,7 +2,7 @@ export const recipeData = {
   name: 'Classic Cheesecake',
   blurb:
     'Look no further for a creamy and ultra smooth classic cheesecake recipe! Paired with a buttery graham cracker crust, no one can deny its simple decadence. For the best results, bake in a water bath.',
-  mainImage: '../src/assets/cheesecake.jpg',
+  mainImage: './cheesecake.jpg',
   cookingDetails: {
     yields: '12 servings',
     prepTime: '45 minutes',
