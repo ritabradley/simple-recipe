@@ -11,7 +11,7 @@ export default function App() {
       <Intro name={recipeData.name} summary={recipeData.blurb} />
       <RecipeImage imgURL={recipeData.mainImage} />
       <main className='md:grid md:grid-cols-2'>
-        <section className='md:order-2'>
+        <section className='md:order-2 md:justify-self-end'>
           <RecipeDetailList recipeDetails={recipeData.cookingDetails} />
         </section>
         <section className='md:order-1'>
