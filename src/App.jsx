@@ -8,8 +8,11 @@ import { recipeData } from '../data.js';
 export default function App() {
   return (
     <>
-      <Intro name={recipeData.name} summary={recipeData.blurb} />
-      <RecipeImage imgURL={recipeData.mainImage} />
+      <header className='md:min-h-screen'>
+        <Intro name={recipeData.name} summary={recipeData.blurb} />
+        <RecipeImage imgURL={recipeData.mainImage} />
+      </header>
+
       <main className='md:grid md:grid-cols-2'>
         <section className='md:order-2 md:justify-self-end'>
           <RecipeDetailList recipeDetails={recipeData.cookingDetails} />
