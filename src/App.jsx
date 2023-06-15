@@ -10,9 +10,15 @@ export default function App() {
     <>
       <Intro name={recipeData.name} summary={recipeData.blurb} />
       <RecipeImage imgURL={recipeData.mainImage} />
-      <RecipeDetailList recipeDetails={recipeData.cookingDetails} />
-      <IngredientList ingredientsList={recipeData.ingredientList} />
-      <InstructionsList instructionsList={recipeData.instructions} />
+      <main className='md:grid md:grid-cols-2'>
+        <section className='md:order-2'>
+          <RecipeDetailList recipeDetails={recipeData.cookingDetails} />
+        </section>
+        <section className='md:order-1'>
+          <IngredientList ingredientsList={recipeData.ingredientList} />
+          <InstructionsList instructionsList={recipeData.instructions} />
+        </section>
+      </main>
     </>
   );
 }
