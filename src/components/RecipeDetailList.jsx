@@ -11,7 +11,7 @@ export default function RecipeDetailList({ recipeDetails }) {
   const entries = Object.entries(recipeDetails);
 
   return (
-    <div className='flex flex-col'>
+    <div className='md:p-10 md:rounded-lg md:shadow-lg md:w-fit flex flex-col'>
       <div>
         <RecipeDetail
           styleClass={entries[0][0] === 'yields' ? 'text-[#d62828]' : 'text-stone-800'}
@@ -21,7 +21,7 @@ export default function RecipeDetailList({ recipeDetails }) {
           key={entries[0][0]}
         />
       </div>
-      <div className='flex'>
+      <div className='md:flex-col flex'>
         {entries.slice(1).map(([key, value]) => (
           <RecipeDetail
             styleClass='text-stone-800'

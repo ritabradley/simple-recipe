@@ -3,7 +3,7 @@ import { faForkKnife } from '@fortawesome/pro-duotone-svg-icons';
 
 export default function RecipeDetail({ title, value, icon, styleClass }) {
   return (
-    <div className={`py-2 mr-8 flex ${styleClass}`}>
+    <div className={`py-2 mr-8 md:mr-0 flex ${styleClass}`}>
       <FontAwesomeIcon
         style={
           icon === faForkKnife
