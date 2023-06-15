@@ -12,7 +12,7 @@ export default function Intro({ name, summary }) {
           style={{ '--fa-primary-color': '#d62828', '--fa-secondary-color': '#fcbf49' }}
         />
         <em>
-          <p className='px-4'>{summary}</p>
+          <p className='md:w-2/3 px-4'>{summary}</p>
         </em>
       </div>
     </section>
