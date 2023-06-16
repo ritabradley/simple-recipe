@@ -14,7 +14,7 @@ export default function RecipeDetail({ title, value, icon, styleClass }) {
       />
       <div className='ml-1.5'>
         <h3 className='text-stone-400 text-xs font-bold uppercase'>{title}</h3>
-        <p>{value}</p>
+        <p className='md:text-base text-sm'>{value}</p>
       </div>
     </div>
   );

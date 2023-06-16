@@ -1,6 +1,6 @@
 export default function Ingredient({ name, amount }) {
   return (
-    <li className='flex items-center py-1 text-sm list-none'>
+    <li className='md:text-base flex items-center py-1 text-sm list-none'>
       <input
         className='w-4 h-4 mr-1 accent-[#fdcf72] focus:accent-[#fcbf49] appearance-none rounded relative cursor-pointer'
         type='checkbox'
